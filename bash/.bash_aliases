@@ -1,0 +1,6 @@
+alias week='gcalcli --calendar martin.lorenzen1@gmail.com calw'
+alias month='gcalcli --calendar martin.lorenzen1@gmail.com calm'
+alias tasks='gcalcli --calendar todoist calw'
+alias agenda='gcalcli agenda'
+alias et='emacs -nw'
+alias ld='exa'
