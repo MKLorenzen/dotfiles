@@ -198,8 +198,8 @@ style = 'bold bright-green'
 ssh_only = false
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R" # Hour:Minute Format
 
-[line_break]
-disabled = true
+# [line_break]
+# disabled = true
