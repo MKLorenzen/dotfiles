@@ -190,12 +190,12 @@ symbol = "zig "
 show_always = true
 style_user = 'bright-green bold'
 style_root = 'white bold'
-format = '[$user]($style)@'
+format = '[$user]($style): '
 
 
 [hostname]
 style = 'bold bright-green'
-ssh_only = false
+ssh_only = true
 
 [time]
 disabled = true
