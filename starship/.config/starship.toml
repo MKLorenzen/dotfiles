@@ -7,11 +7,11 @@ vimcmd_symbol = "[<](bold green)"
 tag_symbol = " tag "
 
 [git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
+#ahead = "a"
+#behind = "b"
+#diverged = "diverged"
+#renamed = "renamed"
+#deleted = "deleted"
 
 [aws]
 symbol = "aws "
