@@ -1,7 +1,13 @@
+format = '''
+[┌───────────────────>](bold green) $directory $git_branch $git_status
+[│](bold green)$sudo $username@$hostname$battery$time \($character\)
+[└─>](bold green) '''
+
 [character]
-success_symbol = "[>](bold green)"
-error_symbol = "[x](bold red)"
+success_symbol = "[Succes](bold green)"
+error_symbol = "[Error](bold red)"
 vimcmd_symbol = "[<](bold green)"
+format = "$symbol"
 
 [git_commit]
 tag_symbol = " tag "
@@ -12,6 +18,11 @@ tag_symbol = " tag "
 #diverged = "diverged"
 renamed = "renamed"
 deleted = "deleted"
+#format = "([\[$all_status$ahead_behind\]]($style))"
+
+[git_branch]
+symbol = "git"
+format = "[| $symbol $branch(:$remote_branch)]($style)"
 
 [aws]
 symbol = "aws "
@@ -48,6 +59,9 @@ symbol = ".NET "
 
 [directory]
 read_only = " ro"
+truncatation_symbol = "$repo_root/.../"
+format = "[$path]($style)[$read_only]($read_only_style)"
+
 
 [docker_context]
 symbol = "docker "
@@ -57,9 +71,6 @@ symbol = "exs "
 
 [elm]
 symbol = "elm "
-
-[git_branch]
-symbol = "git "
 
 [golang]
 symbol = "go "
@@ -190,15 +201,16 @@ symbol = "zig "
 show_always = true
 style_user = 'bright-green bold'
 style_root = 'white bold'
-format = '[$user]($style): '
+format = '[$user]($style)'
 
 
 [hostname]
 style = 'bold bright-green'
-ssh_only = true
+ssh_only = false
+format = '[$hostname]($style)'
 
 [time]
-disabled = true
+disabled = false
 time_format = "%R" # Hour:Minute Format
 
 # [line_break]
