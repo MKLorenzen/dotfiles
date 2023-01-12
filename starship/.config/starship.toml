@@ -10,8 +10,8 @@ tag_symbol = " tag "
 #ahead = "a"
 #behind = "b"
 #diverged = "diverged"
-#renamed = "renamed"
-#deleted = "deleted"
+renamed = "renamed"
+deleted = "deleted"
 
 [aws]
 symbol = "aws "
