@@ -1,6 +1,6 @@
 format = '''
 [┌───────────────────>](bold green) $directory $git_branch $git_status
-[│](bold green)$sudo $username@$hostname$battery$time \($character\)
+[│](bold green)$sudo $username@$hostname$battery $time \($character\)
 [└─>](bold green) '''
 
 [character]
