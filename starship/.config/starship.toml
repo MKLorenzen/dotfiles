@@ -59,7 +59,7 @@ symbol = ".NET "
 
 [directory]
 read_only = " ro"
-truncatation_symbol = "$repo_root/.../"
+truncation_symbol = ".../"
 format = "[$path]($style)[$read_only]($read_only_style)"
 
 
