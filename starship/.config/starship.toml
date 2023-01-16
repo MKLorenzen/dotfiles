@@ -1,11 +1,13 @@
-format = '''
-[┌───────────────────>](bold green) $directory $git_branch $git_status
-[│](bold green)$sudo $username@$hostname$battery $time \($character\)
-[└─>](bold green) '''
+#format = '''
+#[┌───────────────────>](bold green) $directory $git_branch $git_status
+#[│](bold green)$sudo $username@$hostname$battery $time \($character\)
+#[└─>](bold green) '''
+
+format = '''$time \[$character $directory$git_branch$git_status\] $username:-\$ '''
 
 [character]
-success_symbol = "[Succes](bold green)"
-error_symbol = "[Error](bold red)"
+success_symbol = "[S](bold green)"
+error_symbol = "[E](bold red)"
 vimcmd_symbol = "[<](bold green)"
 format = "$symbol"
 
@@ -18,11 +20,11 @@ tag_symbol = " tag "
 #diverged = "diverged"
 renamed = "renamed"
 deleted = "deleted"
-#format = "([\[$all_status$ahead_behind\]]($style))"
+format = "[ $all_status$ahead_behind]($style)"
 
 [git_branch]
 symbol = "git"
-format = "[| $symbol $branch(:$remote_branch)]($style)"
+format = "[ $branch(:$remote_branch)]($style)"
 
 [aws]
 symbol = "aws "
@@ -59,7 +61,8 @@ symbol = ".NET "
 
 [directory]
 read_only = " ro"
-truncation_symbol = ".../"
+truncation_symbol = ""
+truncation_length = 1
 format = "[$path]($style)[$read_only]($read_only_style)"
 
 
@@ -212,6 +215,7 @@ format = '[$hostname]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
+format = "[$time](style)"
 
 # [line_break]
 # disabled = true
