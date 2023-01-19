@@ -223,3 +223,4 @@ exec setxkbmap -option caps:escape us
 exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper/owl.jpg &
 
 exec --no-startup-id conky &
+exec emacs --daemon
