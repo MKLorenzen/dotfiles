@@ -61,7 +61,7 @@ symbol = ".NET "
 
 [directory]
 read_only = " ro"
-truncation_symbol = "??/"
+truncation_symbol = "?/"
 truncation_length = 2
 format = "[$path]($style)[$read_only]($read_only_style)"
 
